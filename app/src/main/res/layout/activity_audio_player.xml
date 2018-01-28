@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.prototype.audiobook.AudioPlayer.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/musicPlayerToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_volume_mute_black_24px"/>
+        <SeekBar
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:progress="50"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="0dp"
+            android:id="@+id/VolumeBar"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/ic_volume_up_black_24px"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/album"
+        android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/buddhist"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/positionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:01"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtStart"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:00"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="265dp"
+            android:id="@+id/txtEnd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+      <Button
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginTop="18dp"
+          android:background="@drawable/ic_steering_wheel"
+          />
+        <Button
+            android:id="@+id/btnFastBackward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_rewind"
+            />
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_play_arrow_black_24px"/>
+
+        <Button
+            android:id="@+id/btnFastForward"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_fast_forward_button"
+            />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/btnSpeedControl"
+            android:text="1.0"
+            android:background="@drawable/round_button"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
